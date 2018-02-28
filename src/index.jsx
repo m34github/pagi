@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Home from './components/Home.jsx';
+
 ReactDOM.render(
-  <h1>hello, world</h1>,
+  <Home />,
   document.querySelector('#root'),
 );
