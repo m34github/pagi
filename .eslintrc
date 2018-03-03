@@ -4,8 +4,10 @@
   },
   "extends": "airbnb",
   "rules": {
+    "comma-dangle": 0,
+    "import/extensions": 0,
+    "no-unused-vars": 1,
     "react/prefer-stateless-function": 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "import/extensions": 0
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
 }
