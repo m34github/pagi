@@ -7,16 +7,23 @@ import {
   Switch,
 } from 'react-router-dom';
 
+import Header from './components/Header.jsx';
 import Home from './components/Home.jsx';
-import Sandbox from './components/Sandbox.jsx';
+import Reader from './components/Reader.jsx';
+import { common } from './commons/style';
 
 ReactDOM.render(
   <Router>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/sandbox" component={Sandbox} />
-      <Redirect to="/" />
-    </Switch>
+    <article>
+      <Header />
+      <main style={common.main}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/reader" component={Reader} />
+          <Redirect to="/" />
+        </Switch>
+      </main>
+    </article>
   </Router>,
   document.querySelector('#root')
 );
