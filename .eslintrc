@@ -9,6 +9,8 @@
     "no-unused-vars": 1,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/no-unused-state": 1,
-    "react/prefer-stateless-function": 0
+    "react/prefer-stateless-function": 0,
+    "react/prop-types": 1,
+    "react/require-default-props": 1
   }
 }
